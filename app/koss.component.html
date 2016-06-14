@@ -1,0 +1,16 @@
+<div>
+<h2>NBA 2016 Warriorsi ja Cleveland algviisikud</h2>
+<ul class="heroes">
+  <li *ngFor="#kossuvennad of korvpallurid"
+  (click)="onSelect(kossuvennad)"
+  [class.selected]="kossuvennad === valitudkorvpallur">
+      <span class="badge">{{kossuvennad.id}}</span> {{kossuvennad.nimi}}
+    </li>
+  </ul>
+  <div *ngIf="valitudkorvpallur" class="infojajutt">
+    <h2>
+      {{valitudkorvpallur.nimi | uppercase}} on korvpallur kelle valisid
+    </h2>
+    <button (click)="gotoDetail()">Vaata korvpalluri Detaile</button>
+  </div>
+</div>

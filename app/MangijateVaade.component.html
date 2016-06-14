@@ -1,0 +1,9 @@
+<h3>Suurimad skoori tegijad</h3>
+<div class="grid grid-pad">
+  <div *ngFor="#kossuvennad of korvpallurid" (click)="gotoDetail(kossuvennad)" class="col-1-4">
+    <div class="module hero">
+      <h4>{{kossuvennad.nimi}}</h4>
+      <img src="pildid/{{kossuvennad.nimi}}.jpg" alt="{{kossuvennad.nimi}}" />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+h1 {
+color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; text-align: center;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 60px;
+}
+nav {
+  padding-top: 20px;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.router-link-active {
+  color: #039be5;
+}

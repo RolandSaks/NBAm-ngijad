@@ -1,0 +1,18 @@
+<div *ngIf="kossuvennad">
+  <h2>{{kossuvennad.nimi}} informatsioon</h2>
+  <img src="pildid/{{kossuvennad.nimi}}.jpg" alt="{{kossuvennad.nimi}}" />
+    <div>
+    <label>nimi: </label>
+    <input [(ngModel)]="kossuvennad.nimi" placeholder="nimi"/>
+  </div>
+  <div>
+    <label>Positsioon:</label> <br>{{kossuvennad.positsioon}}
+  </div>
+  <div>
+    <label>Ylikool:</label><br> {{kossuvennad.ylikool}}
+  </div>
+  <div>
+    <label>Kaal:</label> <br> {{kossuvennad.kaal}}
+  </div>
+  <button (click)="goBack()">Tagasi!</button>
+</div>
